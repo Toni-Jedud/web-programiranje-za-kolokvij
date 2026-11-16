@@ -1,0 +1,51 @@
+// =====================================================================
+// GOTOVI PREDLOŽAK: src/scss/style.scss
+// =====================================================================
+
+// 1) Bootstrap varijable - UVIJEK IZNAD @import-a
+$primary: #26a69a;
+$success: #3cb47c;
+$warning: #ffea63;
+$danger:  #fe604e;
+$light:   #f8f9fa;
+$dark:    #212529;
+// $enable-rounded: false;     // isključi sva zaobljenja
+// $enable-shadows: true;
+
+@import "bootstrap/scss/bootstrap";
+
+// 2) Font: fonts.google.com -> font -> Get font -> Get embed code -> @import
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+// 3) Bootstrap ikone
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css");
+
+body {
+    font-family: "Fraunces", serif;
+    // footer uvijek na dnu:
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+// 4) Fade-in kartica (JS dodaje klasu .show)
+.fade-card {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+
+    &.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// 5) SCSS podsjetnik
+// .kartica {
+//     h5 { color: $primary; }            -> .kartica h5
+//     &:hover { box-shadow: 0 0 8px rgba($primary, 0.4); }   -> .kartica:hover
+//     &.aktivna { border: 2px solid $success; }              -> .kartica.aktivna
+// }

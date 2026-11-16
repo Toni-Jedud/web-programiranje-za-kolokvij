@@ -1,0 +1,92 @@
+nav {
+    background-color: rgb(121, 81, 190);
+    color: white;
+    padding: 16px;
+    font-size: 36px;
+}
+
+body {
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-style: normal;    
+}
+
+h1, h3 {
+    margin: 16px 0px;
+}
+
+.container {
+    margin: 0 10%;
+}
+
+#aTop:hover {
+    background-color: purple;
+    color: white;
+}
+
+
+p#firstParagraph {
+    
+}
+
+ol > li {
+    color: red;
+}
+
+ol > li:first-child {
+    color: blue;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+/* može samo i th */
+table > thead > tr > th {
+    background-color: darkblue;
+    color: whitesmoke;
+    width: 150px;
+    text-align: start;
+}
+
+td {
+    /*text-align: center;*/
+}
+
+form > div {
+    margin-bottom: 8px;
+}
+
+form label {
+    display: inline-block;
+    width: 100px;
+}
+
+
+#squares {
+    display: flex;
+    height: 350px;
+    background-color: rgb(205, 238, 205);
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: darkslategrey;
+    
+}
+
+.square:nth-child(2) {
+    background-color: blueviolet;
+}
+
+.square:last-child {
+    background-color: darkorange;
+}

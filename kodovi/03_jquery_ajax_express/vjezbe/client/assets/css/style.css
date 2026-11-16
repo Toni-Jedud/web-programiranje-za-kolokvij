@@ -1,0 +1,144 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+    background-color: lightgray;
+    display: flex;
+    flex: 1;
+}
+
+nav {
+    background-color: teal;
+    height: 48px;
+}
+
+nav > ul {
+    display: flex;
+    height: 100%;    
+    padding: 0;
+    list-style-type:none;
+}
+
+nav > ul > li {
+    width: 96px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul > li > a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav > ul > li > a:hover:not(.active) {
+    text-decoration: underline;
+}
+
+nav > ul > li > a.active {
+    background-color: rgb(113, 188, 188);
+    color: rgb(7, 79, 79);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-weight: 300;
+    height: 32px;
+}
+
+footer  > * {
+    margin-right: 8px;
+}
+
+.container {
+    margin: 0 96px;
+    padding: 24px;
+    background-color: white;
+    width: 100%;
+}
+
+.profile {
+    width: 196px;
+    height: 196px;
+    border-radius: 50%;
+    background-color: lightgray;
+    /*background: url("../imgs/christoph_waltz.jpg");*/
+    background-position: center;
+    background-size: cover  ;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+form > * {
+    margin-bottom: 8px;
+}
+
+form > button {
+    border: 3px solid teal;
+    border-radius: 3px;
+    background-color: white;
+    color: teal;
+    cursor: pointer;
+}
+
+form > button:hover {
+    background-color: teal;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 16px;
+}
+
+form {
+    margin-bottom: 32px;
+}
+
+#moviesList {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#moviesList > li {
+    margin-bottom: 16px;
+}
+
+#moviesList h3 {
+    margin-bottom: 4px;
+}
+
+.deleteBtn {
+    margin-top: 8px;
+    border: 3px solid tomato;
+    border-radius: 3px;
+    background-color: white;
+    color: tomato;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    background-color: tomato;
+    color: white;
+}

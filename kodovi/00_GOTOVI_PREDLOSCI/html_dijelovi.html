@@ -1,0 +1,92 @@
+<!-- =====================================================================
+     GOTOVI PREDLOŽAK: Bootstrap HTML dijelovi (kopiraj što ti treba)
+     ===================================================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predložak</title>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/index.js"></script>
+</head>
+<body>
+
+    <!-- ===== NAVBAR 1: jednostavan (samo logo) ===== -->
+    <nav class="navbar bg-success shadow mb-4" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="./index.html">
+                <i class="bi bi-stack text-warning me-2"></i>Naziv
+            </a>
+        </div>
+    </nav>
+
+    <!-- ===== NAVBAR 2: s linkovima + hamburger ispod lg ===== -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#meni">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="meni">
+                <ul class="navbar-nav ms-auto">           <!-- ms-auto = linkovi desno, me-auto = lijevo -->
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Početna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="another.html">Druga</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+
+        <!-- ===== FORMA za dodavanje ===== -->
+        <form id="itemForm" class="d-flex gap-2 mb-4">
+            <input class="form-control" name="title" placeholder="Novi zapis" required>
+            <button class="btn btn-success" type="submit">Add</button>
+        </form>
+
+        <!-- ===== KONTEJNER ZA KARTICE (JS puni #items) ===== -->
+        <div class="row g-4" id="items">
+
+            <!-- ===== PROTOTIP KARTICE (na kolokviju zakomentiraj kad prepišeš u JS) =====
+                 col-12 col-sm-6 col-lg-4  ->  1 / 2 / 2 / 3 u redu (xs / sm / md / lg)
+                 pravilo: broj u redu N  ->  col-{12/N}
+            -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card rounded-5 shadow h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Naslov</h5>
+                        <p class="mb-1"><strong>When:</strong> 12/4/2025</p>
+                        <p class="mb-3"><strong>Status:</strong> <i class="bi bi-x-circle-fill text-danger"></i></p>
+                        <div class="row g-2">
+                            <div class="col-12 col-md-6">   <!-- gumbi: ispod do md, pokraj od md -->
+                                <button class="btn btn-light border rounded-pill w-100">Toggle</button>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <button class="btn btn-light border rounded-pill w-100">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ===== LISTA umjesto kartica (kao filmovi na vježbama) ===== -->
+        <ul id="lista" class="list-unstyled">
+            <li class="pb-3">
+                <h3>Naslov</h3>
+                <p>Opis</p>
+                <button class="btn btn-outline-danger">Delete</button>
+            </li>
+        </ul>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-dark text-white py-3 mt-auto">
+        <div class="container text-center">© 2026</div>
+    </footer>
+
+</body>
+</html>

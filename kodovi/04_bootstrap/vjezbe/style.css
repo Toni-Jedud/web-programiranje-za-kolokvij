@@ -1,0 +1,58 @@
+.navbar {
+    border-bottom: 3px solid #198754;
+}
+
+#home-section {
+    height: 650px;
+    background: url("./home.jpg");
+    background-position: center top;
+}
+
+.check-outer {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+}
+
+.img-container-left {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 100px;
+}
+
+.img-container-right {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.img-outer {
+    height: 200px;
+}
+
+@media (min-width: 769px) {
+    .img-outer {
+        height: 100%;
+    }
+}
+
+#explore-img {
+    background-image: url("./explore.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#create-img {
+    background-image: url("./create.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#share-img {
+    background-image: url("./share.jpg");
+    background-position: center;
+    background-size: cover;
+}
